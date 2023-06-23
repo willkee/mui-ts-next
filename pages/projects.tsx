@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
-export default function About() {
+export default function Projects() {
 	return (
 		<Layout>
-			<div>About Page</div>
+			<div>Projects Page</div>
 		</Layout>
 	);
 }
