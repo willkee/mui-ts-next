@@ -25,6 +25,18 @@ const Home: NextPage = () => {
 					<Typography variant="h5" sx={home.title}>
 						Software Developer
 					</Typography>
+					{/* <Typography variant="h5" sx={home.st}>
+						JavaScript
+					</Typography>
+					<Typography variant="h5" sx={home.st}>
+						React.js / Redux.js
+					</Typography>
+					<Typography variant="h5" sx={home.st}>
+						Node.js / Express.js
+					</Typography>
+					<Typography variant="h5" sx={home.st}>
+						HTML / CSS
+					</Typography> */}
 				</Grid>
 			</Grid>
 		</Layout>

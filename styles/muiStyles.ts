@@ -23,5 +23,15 @@ export const home = {
 		alignItems: "center",
 		width: 1,
 		color: "#777",
+		mb: 2,
+	},
+	st: {
+		mt: 2,
+		display: "flex",
+		fontSize: "1rem",
+		justifyContent: "center",
+		alignItems: "center",
+		width: 1,
+		color: "#555",
 	},
 };
