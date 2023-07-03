@@ -1,12 +1,19 @@
 import Image from "next/image";
 import type { NextPage } from "next";
-import Grid from "@mui/material/Grid";
 import Layout from "../components/layout";
-import Typography from "@mui/material/Typography";
+
+import { Button, Typography, Grid } from "@mui/material";
 
 import { home } from "../styles/muiStyles";
 
 const Home: NextPage = () => {
+	const onDownload = () => {
+		const link = document.createElement("a");
+		link.download = `will_kee_resume_${new Date().getTime()}.pdf`;
+		link.href = "/will_kee_resume.pdf";
+		link.click();
+	};
+
 	return (
 		<Layout>
 			<Grid container sx={home.container}>
@@ -20,23 +27,18 @@ const Home: NextPage = () => {
 				</Grid>
 				<Grid item xs={6} sx={home.right}>
 					<Typography variant="h2" sx={home.name}>
-						Hi! I&apos;m Will.
+						Will Kee
 					</Typography>
 					<Typography variant="h5" sx={home.title}>
 						Software Developer
 					</Typography>
-					{/* <Typography variant="h5" sx={home.st}>
-						JavaScript
-					</Typography>
-					<Typography variant="h5" sx={home.st}>
-						React.js / Redux.js
-					</Typography>
-					<Typography variant="h5" sx={home.st}>
-						Node.js / Express.js
-					</Typography>
-					<Typography variant="h5" sx={home.st}>
-						HTML / CSS
-					</Typography> */}
+					<Button
+						onClick={onDownload}
+						variant="contained"
+						sx={home.button}
+					>
+						Download Resume
+					</Button>
 				</Grid>
 			</Grid>
 		</Layout>
