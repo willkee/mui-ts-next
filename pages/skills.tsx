@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Stack, Paper, Typography, Box, Grid } from "@mui/material";
+import { Paper, Typography, Box, Grid, Container } from "@mui/material";
 import Layout from "../components/layout";
 import { styled } from "@mui/material/styles";
 import { frontend, backend, other } from "../components/technologies";
@@ -9,15 +9,14 @@ export default function Skills() {
 	const Item = styled(Paper)(({ theme }) => ({
 		backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 		...theme.typography.body2,
-		// padding: theme.spacing(2),
 		textAlign: "center",
 		color: theme.palette.text.secondary,
 	}));
 
 	return (
 		<Layout>
-			<Box sx={{ m: 2 }}>
-				<Typography variant="h2">Skills / Experience</Typography>
+			<Container maxWidth="xl" sx={{ mt: 4 }}>
+				<Typography variant="h2">Skills</Typography>
 
 				<Box sx={{ mt: 2, flexGrow: 1 }}>
 					<Typography sx={{ mt: 3, mb: 2 }} variant="h6">
@@ -85,7 +84,7 @@ export default function Skills() {
 						))}
 					</Grid>
 				</Box>
-			</Box>
+			</Container>
 		</Layout>
 	);
 }

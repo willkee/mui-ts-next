@@ -19,8 +19,8 @@ export default function TechTile({ icon, name, skill }: Props) {
 					width: `${skill}`,
 					height: 1,
 					background:
-						"linear-gradient(to right, #ff6600 0%, #66ff66 100%)",
-					opacity: 0.25,
+						"linear-gradient(to right, #0f4c81 0%, #bfd0ca 100%)",
+					opacity: 0.3,
 					borderRadius: "5px",
 				}}
 			></Box>

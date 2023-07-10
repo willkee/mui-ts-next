@@ -12,7 +12,14 @@ import MenuItem from "@mui/material/MenuItem";
 import { useRouter } from "next/router";
 import PersonalLogo from "./PersonalLogo";
 
-const pages = ["About", "Skills", "Projects", "Contact"];
+const pages = [
+	"About",
+	"Skills",
+	"Experience",
+	"Education",
+	"Projects",
+	"Contact",
+];
 
 function Navigation() {
 	const [anchor, setAnchor] = useState<null | HTMLElement>(null);
