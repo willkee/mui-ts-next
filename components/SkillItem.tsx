@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 type Props = { name: string; icon: string; skill?: string };
-export default function TechTile({ icon, name, skill }: Props) {
+export default function SkillItem({ icon, name, skill }: Props) {
 	return (
 		<Box
 			sx={{

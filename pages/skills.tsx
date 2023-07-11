@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Paper, Typography, Box, Grid, Container } from "@mui/material";
 import Layout from "../components/layout";
 import { styled } from "@mui/material/styles";
-import { frontend, backend, other } from "../components/technologies";
-import TechTile from "../components/techTile";
+import { frontend, backend, other } from "./data/skills";
+import SkillItem from "../components/SkillItem";
 
 export default function Skills() {
 	const Item = styled(Paper)(({ theme }) => ({
@@ -30,7 +30,7 @@ export default function Skills() {
 						{frontend.map((t: any) => (
 							<Grid item xs={2} sm={4} md={4} key={t.name}>
 								<Item>
-									<TechTile
+									<SkillItem
 										key={t.name}
 										name={t.name}
 										icon={t.icon}
@@ -51,7 +51,7 @@ export default function Skills() {
 						{backend.map((t: any) => (
 							<Grid item xs={2} sm={4} md={4} key={t.name}>
 								<Item>
-									<TechTile
+									<SkillItem
 										key={t.name}
 										name={t.name}
 										icon={t.icon}
@@ -73,7 +73,7 @@ export default function Skills() {
 						{other.map((t: any) => (
 							<Grid item xs={2} sm={4} md={4} key={t.name}>
 								<Item>
-									<TechTile
+									<SkillItem
 										key={t.name}
 										name={t.name}
 										skill={t.skill}

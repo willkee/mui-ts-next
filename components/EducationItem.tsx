@@ -1,9 +1,8 @@
 import { Box, Typography, Grid, Paper } from "@mui/material";
 import CompanyLogo from "./CompanyLogo";
-import { styled } from "@mui/material/styles";
 
-export default function ExperienceItem({ props }: any) {
-	const { company, title, dates, city, shortDesc, longDesc } = props;
+export default function EducationItem({ props }: any) {
+	const { school, level, minor, major, awards, city, dates } = props;
 
 	return (
 		<Box sx={{ m: 2, mt: 5 }}>
@@ -21,44 +20,42 @@ export default function ExperienceItem({ props }: any) {
 							sx={{
 								position: "relative",
 								width: { xs: "40px", sm: "55px", md: "80px" },
-								height: "100px",
+								height: "100%",
 							}}
 						>
-							<CompanyLogo name={company} />
+							<CompanyLogo name={school} />
 						</Box>
 					</Grid>
 					<Grid item xs={9}>
 						<Box sx={{ ml: 2 }}>
 							<Typography sx={{ fontSize: "16px" }}>
-								{title}
+								{major}
+								{awards && (
+									<>
+										,
+										<Box
+											component="span"
+											sx={{
+												fontSize: "14px",
+												fontStyle: "italic",
+												color: "#eee8ac",
+												ml: 0.5,
+											}}
+										>
+											{awards}
+										</Box>
+									</>
+								)}
 							</Typography>
+
 							<Typography
 								sx={{ fontSize: "14px", fontWeight: "bold" }}
 							>
-								{company}
+								{school}
 							</Typography>
-							<Typography
-								sx={{ fontSize: "14px", fontWeight: "bold" }}
-							>
+							<Typography sx={{ fontSize: "14px" }}>
 								{city}
 							</Typography>
-							{shortDesc.map((desc: string, i: number) => (
-								<Typography key={i} sx={{ fontSize: "14px" }}>
-									{desc}
-								</Typography>
-							))}
-							<ul
-								style={{
-									marginTop: "5px",
-									marginLeft: "-15px",
-								}}
-							>
-								{longDesc.map((desc: string, i: number) => (
-									<li key={i} style={{ fontSize: "14px" }}>
-										{desc}
-									</li>
-								))}
-							</ul>
 						</Box>
 					</Grid>
 					<Grid

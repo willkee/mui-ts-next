@@ -20,6 +20,24 @@ export default function CompanyLogo({ name }: { name: string }) {
 				/>
 			);
 		}
+		case "App Academy": {
+			return (
+				<Image
+					src={"/app_academy.svg"}
+					layout="fill"
+					alt="App Academy Logo"
+				/>
+			);
+		}
+		case "Western Michigan University": {
+			return (
+				<Image
+					src={"/western_michigan.svg"}
+					layout="fill"
+					alt="Western Michigan University Logo"
+				/>
+			);
+		}
 		case "Uber": {
 			return <Image src={"/uber.svg"} layout="fill" alt="Uber Logo" />;
 		}
