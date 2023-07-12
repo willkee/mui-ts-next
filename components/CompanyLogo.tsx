@@ -4,7 +4,7 @@ export default function CompanyLogo({ name }: { name: string }) {
 		case "Etana Custody": {
 			return (
 				<Image
-					src={"/etana.png"}
+					src={"/experience/etana.png"}
 					layout="fill"
 					alt="Etana Custody Logo"
 					objectFit={"contain"}
@@ -14,7 +14,7 @@ export default function CompanyLogo({ name }: { name: string }) {
 		case "Best Buy Geek Squad": {
 			return (
 				<Image
-					src={"/geeksquad.svg"}
+					src={"/experience/geeksquad.svg"}
 					layout="fill"
 					alt="Geek Squad Logo"
 				/>
@@ -23,7 +23,7 @@ export default function CompanyLogo({ name }: { name: string }) {
 		case "App Academy": {
 			return (
 				<Image
-					src={"/app_academy.svg"}
+					src={"/education/app_academy.svg"}
 					layout="fill"
 					alt="App Academy Logo"
 				/>
@@ -32,14 +32,20 @@ export default function CompanyLogo({ name }: { name: string }) {
 		case "Western Michigan University": {
 			return (
 				<Image
-					src={"/western_michigan.svg"}
+					src={"/education/western_michigan.svg"}
 					layout="fill"
 					alt="Western Michigan University Logo"
 				/>
 			);
 		}
 		case "Uber": {
-			return <Image src={"/uber.svg"} layout="fill" alt="Uber Logo" />;
+			return (
+				<Image
+					src={"/experience/uber.svg"}
+					layout="fill"
+					alt="Uber Logo"
+				/>
+			);
 		}
 		default:
 			return null;

@@ -17,7 +17,7 @@ export default function About() {
 			<Grid container sx={about.container}>
 				<Grid item xs={6} sx={{ position: "relative" }}>
 					<Image
-						src="/ai_image.jpg"
+						src="/self/ai_image.jpg"
 						layout="fill"
 						alt="Will Kee AI Image"
 						objectFit="cover"

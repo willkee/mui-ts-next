@@ -1,6 +1,5 @@
 import { Box, Typography, Grid, Paper } from "@mui/material";
 import CompanyLogo from "./CompanyLogo";
-import { styled } from "@mui/material/styles";
 
 export default function ExperienceItem({ props }: any) {
 	const { company, title, dates, city, shortDesc, longDesc } = props;
