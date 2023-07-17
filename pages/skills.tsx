@@ -1,18 +1,11 @@
-import { useState, useEffect } from "react";
-import { Paper, Typography, Box, Grid, Container } from "@mui/material";
+import { Typography, Box, Grid, Container } from "@mui/material";
 import Layout from "../components/layout";
-import { styled } from "@mui/material/styles";
-import { frontend, backend, other } from "./data/skills";
+import { Item } from "../components/Item";
 import SkillItem from "../components/SkillItem";
 
-export default function Skills() {
-	const Item = styled(Paper)(({ theme }) => ({
-		backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-		...theme.typography.body2,
-		textAlign: "center",
-		color: theme.palette.text.secondary,
-	}));
+import { frontend, backend, other } from "./data/skills";
 
+export default function Skills() {
 	return (
 		<Layout>
 			<Container maxWidth="xl" sx={{ mt: 4 }}>

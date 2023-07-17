@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+
 type Props = { name: string; icon: string; skill?: string };
 export default function SkillItem({ icon, name, skill }: Props) {
 	return (

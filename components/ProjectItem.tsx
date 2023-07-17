@@ -1,11 +1,136 @@
-import { Box, Typography, Grid, Link } from "@mui/material";
+import { Box, Typography, Grid, Link, Button, CardMedia } from "@mui/material";
+import Carousel from "react-material-ui-carousel";
+import Image from "next/image";
 
 export default function ProjectItem({ props }: any) {
 	const { name, description, live, repo } = props;
+	const items = [
+		{
+			Caption:
+				"CampBnB is based off of AirBnB for users to list their spots or make bookings at existing spots on the platform.",
+			contentPosition: "left",
+			Image: "https://source.unsplash.com/featured/?macbook",
+			Items: [
+				{
+					Name: "Macbook Pro",
+					Image: "https://source.unsplash.com/featured/?macbook",
+				},
+				{
+					Name: "iPhone",
+					Image: "https://source.unsplash.com/featured/?iphone",
+				},
+			],
+		},
+		{
+			Caption:
+				"Spots may be edited or deleted by the owner of the spot as well.",
+			contentPosition: "middle",
+			Image: "https://source.unsplash.com/featured/?washingmachine",
+			Items: [
+				{
+					Name: "Washing Machine WX9102",
+					Image: "https://source.unsplash.com/featured/?washingmachine",
+				},
+				{
+					Name: "Learus Vacuum Cleaner",
+					Image: "https://source.unsplash.com/featured/?vacuum,cleaner",
+				},
+			],
+		},
+		{
+			Caption: "Give style and color to your living room!",
+			contentPosition: "right",
+			Image: "https://source.unsplash.com/featured/?lamp",
+			Items: [
+				{
+					Name: "Living Room Lamp",
+					Image: "https://source.unsplash.com/featured/?lamp",
+				},
+				{
+					Name: "Floral Vase",
+					Image: "https://source.unsplash.com/featured/?vase",
+				},
+			],
+		},
+	];
 
 	return (
 		<Box sx={{ m: 2, mt: 5 }}>
-			<Box
+			<Carousel>
+				{items.map(({ Caption, Image }, i) => (
+					<Grid
+						container
+						key={i}
+						sx={{
+							width: 1,
+							border: "1px solid red",
+							display: "flex",
+							height: "500px",
+						}}
+					>
+						<Grid
+							item
+							xs={8}
+							sx={{
+								height: 1,
+								display: "flex",
+								backgroundColor: "rgba(0,0,0,0.8)",
+								p: 3,
+							}}
+						>
+							<Box
+								sx={{
+									position: "relative",
+									overflow: "hidden",
+								}}
+							>
+								<Typography variant="h3">{name}</Typography>
+								<Typography className="Caption">
+									{Caption}
+								</Typography>
+								<Button
+									variant="outlined"
+									className="ViewButton"
+								>
+									Live Site
+								</Button>
+								<Button
+									variant="outlined"
+									className="ViewButton"
+								>
+									GitHub Repository
+								</Button>
+							</Box>
+						</Grid>
+						<Grid
+							item
+							xs={12}
+							sx={{
+								border: "1px solid yellow",
+								display: "flex",
+								height: 1,
+								width: 1,
+								position: "absolute",
+								zIndex: -1,
+							}}
+						>
+							<CardMedia
+								component="img"
+								image={Image}
+								alt="Paella dish"
+								sx={{ objectFit: "cover", height: "100%" }}
+							/>
+							<CardMedia
+								component="img"
+								image={Image}
+								alt="Paella dish"
+								sx={{ objectFit: "cover", height: "100%" }}
+							/>
+						</Grid>
+					</Grid>
+				))}
+			</Carousel>
+			{/* <Box
 				sx={{
 					flexGrow: 1,
 					display: "flex",
@@ -57,8 +182,7 @@ export default function ProjectItem({ props }: any) {
 							GitHub Repository
 						</Link>
 					</Box>
-				</Grid>
-			</Box>
+				</Grid> */}
 		</Box>
 	);
 }
