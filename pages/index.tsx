@@ -1,19 +1,11 @@
 import Image from "next/image";
 import type { NextPage } from "next";
 import Layout from "../components/layout";
-
 import { Button, Typography, Grid } from "@mui/material";
-
 import { home } from "../styles/muiStyles";
+import { onDownload } from "../components/ResumeDownload";
 
 const Home: NextPage = () => {
-	const onDownload = () => {
-		const link = document.createElement("a");
-		link.download = `will_kee_resume_${new Date().getTime()}.pdf`;
-		link.href = "/will_kee_resume.pdf";
-		link.click();
-	};
-
 	return (
 		<Layout>
 			<Grid container sx={home.container}>
