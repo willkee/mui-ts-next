@@ -2,7 +2,7 @@ import { Button, Typography, Grid } from "@mui/material";
 import Image from "next/image";
 import Layout from "../components/layout";
 import { about } from "../styles/muiStyles";
-import { desc } from "./data/about";
+import { desc } from "../data/about";
 import { onDownload } from "../components/ResumeDownload";
 
 export default function About() {

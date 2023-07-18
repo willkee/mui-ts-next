@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import { Item } from "../components/Item";
 import SkillItem from "../components/SkillItem";
 
-import { frontend, backend, other } from "./data/skills";
+import { frontend, backend, other } from "../data/skills";
 
 export default function Skills() {
 	return (

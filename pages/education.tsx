@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import Layout from "../components/layout";
 import EducationItem from "../components/EducationItem";
-import { schools } from "./data/schools";
+import { schools } from "../data/schools";
 
 export default function Education() {
 	return (

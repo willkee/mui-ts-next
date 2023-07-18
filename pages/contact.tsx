@@ -2,7 +2,7 @@ import { Button, Typography, Grid, Box, CardMedia } from "@mui/material";
 import Image from "next/image";
 import Layout from "../components/layout";
 
-import { contact } from "./data/contact";
+import { contact } from "../data/contact";
 import { ct } from "../styles/muiStyles";
 import EmailIcon from "../components/EmailIcon";
 export default function Contact() {

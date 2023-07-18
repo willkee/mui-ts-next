@@ -1,7 +1,7 @@
 import { Container, Typography, Paper, Button } from "@mui/material";
 import Layout from "../components/layout";
 import ProjectItem from "../components/ProjectItem";
-import { projects } from "./data/projects";
+import { projects } from "../data/projects";
 
 export default function Projects() {
 	return (

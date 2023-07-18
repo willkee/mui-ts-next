@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 import ExperienceItem from "../components/ExperienceItem";
 
-import { companies } from "./data/companies";
+import { companies } from "../data/companies";
 
 export default function Experience() {
 	return (
