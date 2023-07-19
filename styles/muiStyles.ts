@@ -10,12 +10,17 @@ export const home = {
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
+		backgroundColor: "rgba(0,0,0,0.85)",
+		width: 1,
+		height: "calc(100vh - 80px)",
+		position: { xs: "absolute", sm: "absolute", md: "relative" },
 	},
 	name: {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
 		width: 1,
+		fontSize: "3rem",
 	},
 	title: {
 		display: "flex",

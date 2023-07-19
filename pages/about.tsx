@@ -18,7 +18,7 @@ export default function About() {
 					/>
 				</Grid>
 				<Grid item xs={12} sm={12} md={6} sx={about.right}>
-					<Typography variant="h2" sx={about.name}>
+					<Typography variant="h3" sx={about.name}>
 						{desc.name}
 					</Typography>
 					{desc.text.map((p, i) => (
