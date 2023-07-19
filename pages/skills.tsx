@@ -17,8 +17,8 @@ export default function Skills() {
 					</Typography>
 					<Grid
 						container
-						spacing={{ xs: 2, md: 3 }}
-						columns={{ xs: 4, sm: 8, md: 12 }}
+						spacing={{ xs: 1, md: 3 }}
+						columns={{ xs: 1, sm: 8, md: 12 }}
 					>
 						{frontend.map((t: any) => (
 							<Grid item xs={2} sm={4} md={4} key={t.name}>
@@ -38,8 +38,8 @@ export default function Skills() {
 					</Typography>
 					<Grid
 						container
-						spacing={{ xs: 2, md: 3 }}
-						columns={{ xs: 4, sm: 8, md: 12 }}
+						spacing={{ xs: 1, md: 3 }}
+						columns={{ xs: 1, sm: 8, md: 12 }}
 					>
 						{backend.map((t: any) => (
 							<Grid item xs={2} sm={4} md={4} key={t.name}>
@@ -59,8 +59,8 @@ export default function Skills() {
 					</Typography>
 					<Grid
 						container
-						spacing={{ xs: 2, md: 3 }}
-						columns={{ xs: 4, sm: 8, md: 12 }}
+						spacing={{ xs: 1, md: 3 }}
+						columns={{ xs: 1, sm: 8, md: 12 }}
 						sx={{ mb: 2 }}
 					>
 						{other.map((t: any) => (
