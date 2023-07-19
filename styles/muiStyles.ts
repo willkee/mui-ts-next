@@ -149,27 +149,27 @@ export const ct = {
 		height: 1,
 		width: 1,
 		boxSizing: "content-box",
-		display: "flex",
 	},
 	right: {
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "space-evenly",
-		alignItems: "center",
 		p: 5,
 		height: 1,
 		width: 1,
 		backgroundColor: "rgba(0,0,0,0.85)",
 		position: { xs: "absolute", sm: "absolute", md: "relative" },
+		overflowY: "auto",
 	},
 	name: {
 		display: "block",
 		justifyContent: "center",
 		alignItems: "center",
-		width: 1,
-		height: 1,
-		position: "relative",
-		zIndex: 99,
+		textAlign: "center",
+		pt: {
+			xs: 10,
+			sm: 5,
+			md: 10,
+		},
 	},
 	title: {
 		display: "flex",
@@ -193,6 +193,12 @@ export const ct = {
 	btnContainer: {
 		display: "flex",
 		flexDirection: "column",
+		alignItems: "center",
+		pt: {
+			xs: 5,
+			sm: 5,
+			md: 10,
+		},
 	},
 	links: {
 		mt: 4,
@@ -201,10 +207,6 @@ export const ct = {
 		width: "200px",
 		height: "60px",
 		fontSize: "1.1rem",
-		position: "relative",
 	},
 	text: { ml: 2 },
-	linkedin: {
-		fontSize: "220px",
-	},
 };
