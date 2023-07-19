@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 	return (
 		<Layout>
 			<Grid container sx={home.container}>
-				<Grid item xs={6} sx={{ position: "relative" }}>
+				<Grid item xs={12} sm={12} md={6} sx={{ position: "relative" }}>
 					<Image
 						src="/self/ai_image.jpg"
 						layout="fill"
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 						objectFit="cover"
 					/>
 				</Grid>
-				<Grid item xs={6} sx={home.right}>
+				<Grid item xs={12} sm={12} md={6} sx={home.right}>
 					<Typography variant="h2" sx={home.name}>
 						Will Kee
 					</Typography>
