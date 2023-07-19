@@ -20,7 +20,17 @@ export default function Contact() {
 	return (
 		<Layout>
 			<Grid container sx={ct.container}>
-				<Grid item xs={12} sm={12} md={6} sx={{ position: "relative" }}>
+				<Grid
+					item
+					xs={12}
+					sm={12}
+					md={6}
+					sx={{
+						position: "relative",
+						height: "100%",
+						minHeight: "100vh",
+					}}
+				>
 					<Image
 						src="/self/ai_image.jpg"
 						layout="fill"
