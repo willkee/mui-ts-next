@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Box } from "@mui/material";
 export default function CompanyLogo({ name }: { name: string }) {
 	switch (name) {
 		case "Etana Custody": {
@@ -31,20 +32,36 @@ export default function CompanyLogo({ name }: { name: string }) {
 		}
 		case "Western Michigan University": {
 			return (
-				<Image
-					src={"/education/western_michigan.svg"}
-					layout="fill"
-					alt="Western Michigan University Logo"
-				/>
+				<Box
+					sx={{
+						height: "70px",
+						position: "relative",
+						width: 1,
+					}}
+				>
+					<Image
+						src={"/education/western_michigan.svg"}
+						layout="fill"
+						alt="Western Michigan University Logo"
+					/>
+				</Box>
 			);
 		}
 		case "Uber": {
 			return (
-				<Image
-					src={"/experience/uber.svg"}
-					layout="fill"
-					alt="Uber Logo"
-				/>
+				<Box
+					sx={{
+						height: "70px",
+						position: "relative",
+						width: 1,
+					}}
+				>
+					<Image
+						src={"/experience/uber.svg"}
+						layout="fill"
+						alt="Uber Logo"
+					/>
+				</Box>
 			);
 		}
 		default:

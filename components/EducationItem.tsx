@@ -21,30 +21,32 @@ export default function EducationItem({ props }: any) {
 								position: "relative",
 								width: { xs: "40px", sm: "55px", md: "80px" },
 								height: "100%",
+								display: "flex",
+								flexDirection: "column",
+								alignItems: "center",
+								justifyContent: "center",
 							}}
 						>
 							<CompanyLogo name={school} />
 						</Box>
 					</Grid>
 					<Grid item xs={9}>
-						<Box sx={{ ml: 2 }}>
-							<Typography sx={{ fontSize: "16px" }}>
+						<Box sx={{ ml: 4 }}>
+							<Typography sx={{ fontSize: "16px", mb: 0 }}>
 								{major}
+							</Typography>
+							<Typography sx={{ fontSize: "16px" }}>
 								{awards && (
-									<>
-										,
-										<Box
-											component="span"
-											sx={{
-												fontSize: "14px",
-												fontStyle: "italic",
-												color: "#eee8ac",
-												ml: 0.5,
-											}}
-										>
-											{awards}
-										</Box>
-									</>
+									<Box
+										component="span"
+										sx={{
+											fontSize: "14px",
+											fontStyle: "italic",
+											color: "#eee8ac",
+										}}
+									>
+										{awards}
+									</Box>
 								)}
 							</Typography>
 

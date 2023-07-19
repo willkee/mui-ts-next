@@ -13,6 +13,6 @@ export const schools = {
 		minor: "General Business",
 		city: "Kalamazoo, MI, United States",
 		dates: "09/2011 - 12/2015",
-		awards: "summa cum laude",
+		awards: "Lee Honors College graduate, summa cum laude (3.95 GPA)",
 	},
 };

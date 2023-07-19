@@ -27,7 +27,7 @@ export default function ExperienceItem({ props }: any) {
 						</Box>
 					</Grid>
 					<Grid item xs={9}>
-						<Box sx={{ ml: 2 }}>
+						<Box sx={{ ml: 4 }}>
 							<Typography sx={{ fontSize: "16px" }}>
 								{title}
 							</Typography>
