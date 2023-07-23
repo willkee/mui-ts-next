@@ -146,7 +146,7 @@ export const projects = {
 
 export const ct = {
 	container: {
-		height: 1,
+		height: "calc(100vh - 80px)",
 		width: 1,
 		boxSizing: "content-box",
 	},
@@ -154,9 +154,8 @@ export const ct = {
 		display: "flex",
 		flexDirection: "column",
 		p: 5,
-		height: "100%",
+		height: "calc(100vh - 80px)",
 		width: 1,
-		minHeight: "100vh",
 		backgroundColor: "rgba(0,0,0,0.85)",
 		position: { xs: "absolute", sm: "absolute", md: "relative" },
 		overflowY: "auto",

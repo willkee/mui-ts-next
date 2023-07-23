@@ -4,19 +4,8 @@ import Layout from "../components/layout";
 
 import { contact } from "../data/contact";
 import { ct } from "../styles/muiStyles";
-import EmailIcon from "../components/EmailIcon";
-export default function Contact() {
-	function WellFoundLogo() {
-		return (
-			<Image
-				src="/wellfound.png"
-				layout="fill"
-				alt="Wellfound Logo"
-				objectFit="cover"
-			/>
-		);
-	}
 
+export default function Contact() {
 	return (
 		<Layout>
 			<Grid container sx={ct.container}>
@@ -27,14 +16,13 @@ export default function Contact() {
 					md={6}
 					sx={{
 						position: "relative",
-						height: "100%",
-						minHeight: "100vh",
+						height: 1,
 					}}
 				>
 					<Image
-						src="/self/ai_image.jpg"
+						src="/self/real_image.png"
 						layout="fill"
-						alt="Will Kee AI Image"
+						alt="Will Kee Image"
 						objectFit="cover"
 					/>
 				</Grid>
@@ -43,20 +31,14 @@ export default function Contact() {
 						Contact Me
 					</Typography>
 					<Box sx={ct.btnContainer}>
-						{contact.map(({ name, href, icon, ref }: any) => (
+						{contact.map(({ name, href, icon }: any) => (
 							<Button
 								href={href}
 								key={name}
 								target="_blank"
 								sx={ct.links}
 							>
-								{icon ? (
-									<i className={icon} />
-								) : ref === "WF" ? (
-									<WellFoundLogo />
-								) : (
-									<EmailIcon />
-								)}
+								{icon}
 								<Box sx={ct.text}>{name}</Box>
 							</Button>
 						))}
