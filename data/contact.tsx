@@ -1,26 +1,29 @@
+import {
+	EmailIcon,
+	GitHubIcon,
+	LinkedInIcon,
+	WellFoundIcon,
+} from "../components/ContactIcon";
+
 export const contact: any[] = [
 	{
-		ref: "GH",
 		name: "GitHub",
-		icon: "devicon-github-original",
 		href: "https://github.com/willkee",
+		icon: <GitHubIcon />,
 	},
 	{
-		ref: "LI",
 		name: "LinkedIn",
-		icon: "devicon-linkedin-plain",
 		href: "https://www.linkedin.com/in/will-kee/",
+		icon: <LinkedInIcon />,
 	},
 	{
-		ref: "WF",
 		name: "",
-		icon: "",
 		href: "https://wellfound.com/u/will-kee",
+		icon: <WellFoundIcon />,
 	},
 	{
-		ref: "EM",
 		name: "Email",
-		icon: "",
 		href: "mailto:will.kee.dev@gmail.com",
+		icon: <EmailIcon />,
 	},
 ];
