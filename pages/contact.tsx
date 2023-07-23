@@ -20,7 +20,7 @@ export default function Contact() {
 					}}
 				>
 					<Image
-						src="/self/real_image.png"
+						src="/self/actual_selfie.png"
 						layout="fill"
 						alt="Will Kee Image"
 						objectFit="cover"
