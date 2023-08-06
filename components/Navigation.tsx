@@ -119,6 +119,12 @@ function Navigation() {
 									mr: 2,
 									color: "white",
 									display: "block",
+									border: "2px solid transparent",
+									":hover": {
+										backgroundColor: "transparent",
+										borderRadius: 0,
+										borderBottom: "2px solid white",
+									},
 								}}
 							>
 								{page}

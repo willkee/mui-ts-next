@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navigation from "../components/Navigation";
+import Slide from "@mui/material/Slide";
 
 export default function Layout({ children }: any) {
 	return (
@@ -15,7 +16,17 @@ export default function Layout({ children }: any) {
 				<link rel="shortcut icon" href="/favicon_dark.ico" />
 			</Head>
 
-			<main className={styles.main}>{children}</main>
+			<main className={styles.main}>
+				<Slide
+					direction="left"
+					in={children}
+					mountOnEnter
+					unmountOnExit
+					timeout={{ enter: 600, exit: children ? 1 : 900 }}
+				>
+					{children}
+				</Slide>
+			</main>
 		</>
 	);
 }

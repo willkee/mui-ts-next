@@ -1,13 +1,16 @@
 import { SvgIcon } from "@mui/material";
 import { useRouter } from "next/router";
+
 export default function PersonalLogo() {
 	const router = useRouter();
 	return (
 		<SvgIcon onClick={() => router.push("/")} sx={{ cursor: "pointer" }}>
 			<svg
+				className=""
 				xmlns="http://www.w3.org/2000/svg"
 				version="1.1"
 				viewBox="270.67 270.67 525.33 525.33"
+				fill="transparent"
 			>
 				<g transform="matrix(1.3333333,0,0,-1.3333333,0,1066.6667)">
 					<g transform="scale(0.1)">
