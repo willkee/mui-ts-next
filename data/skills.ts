@@ -25,7 +25,7 @@ export const frontend: any[] = [
 		// skill: "70%",
 	},
 	{
-		name: "Next.js (actively learning)",
+		name: "Next.js",
 		icon: "devicon-nextjs-original",
 		// skill: "10%",
 	},
