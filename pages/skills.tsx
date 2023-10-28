@@ -27,7 +27,7 @@ export default function Skills() {
 										key={t.name}
 										name={t.name}
 										icon={t.icon}
-										skill={t.skill}
+										// skill={t.skill}
 									/>
 								</Item>
 							</Grid>
@@ -48,7 +48,7 @@ export default function Skills() {
 										key={t.name}
 										name={t.name}
 										icon={t.icon}
-										skill={t.skill}
+										// skill={t.skill}
 									/>
 								</Item>
 							</Grid>
@@ -69,7 +69,7 @@ export default function Skills() {
 									<SkillItem
 										key={t.name}
 										name={t.name}
-										skill={t.skill}
+										// skill={t.skill}
 										icon={t.icon}
 									/>
 								</Item>
